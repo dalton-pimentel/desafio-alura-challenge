@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Lógica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a class="logo" href="#"
+          ><img class="img-logo" src="./assets/logo-alura.svg" alt="Alura's logo" />
+        </a>
+        <div class="menu">
+          <ul class="social-links">
+            <li>
+              <a href="https://www.linkedin.com/in/dalton-pimentel" target="_blank"
+                ><i class="ph-linkedin-logo-thin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/dalton-pimentel" target="_blank"
+                ><i class="ph-github-logo-thin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="wrapper">
+        <!-- Input -->
+        <div class="content-input">
+          <textarea
+            id="input-text"
+            class="input-text"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
+          <p>
+            <i class="ph-warning-circle-thin"></i>Apenas letras minúsculas e sem
+            acento.
+          </p>
+          <div class="buttons">
+            <button id="btnEncrypt" class="button-style button-criptografar">
+              Criptografar!
+            </button>
+            <button id="btnDecrypt" class="button-style button-descriptografar">
+              Descriptografar!
+            </button>
+          </div>
+        </div>
+
+        <!-- Output -->
+        <div class="content-output">
+          <div class="output-noMsg">
+            <div id="contentNoMessage" class="content-noMsg">
+              <h2>Nenhuma mensagem encontrada</h2>
+              <p>
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
+          </div>
+
+          <div id="hideOutput" class="hide-output display-option">
+            <div class="output-result">
+              <p id="output-text"></p>
+
+              <button id="btnCopy" class="button-style button-copy">
+                Copiar!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <a class="logo" href="#"
+          ><img src="./assets/logo-alura.svg" alt="Alura's logo" />
+        </a>
+        <p>
+          ©2024 Desenvolvido por Dalton Pimentel.<br />
+        </p>
+       
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
